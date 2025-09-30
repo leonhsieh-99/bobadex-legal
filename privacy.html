@@ -14,10 +14,10 @@
 
 <h2>Information we collect</h2>
 <ul>
-  <li><strong>Account Information</strong>: email (via Supabase Auth), username, display name, profile image.</li>
+  <li><strong>Account Information</strong>: email (via Supabase Auth), username, display name, profile image. Names and display names are tied to your account and may be visible to other users in shared features.</li>
   <li><strong>User Content</strong>: shops you add, drinks, notes, and photos you upload.</li>
   <li><strong>Social</strong>: friendships (requests/acceptance).</li>
-  <li><strong>Diagnostics</strong>: crash reports and performance data (via Sentry), device/OS information.</li>
+  <li><strong>Diagnostics</strong>: crash reports and performance data (via Firebase Crashlytics and/or Sentry), device/OS information.</li>
 </ul>
 <p>We do not collect precise location or payment information at this time.</p>
 
@@ -28,19 +28,20 @@
 <ul>
   <li><strong>Supabase</strong> — authentication, database, storage.</li>
   <li><strong>Firebase Analytics (Google)</strong> — usage analytics.</li>
-  <li><strong>Sentry</strong> — crash reporting and diagnostics.</li>
+  <li><strong>Firebase Crashlytics / Sentry</strong> — crash reporting and diagnostics.</li>
   <li><strong>Image generation vendor</strong> — brand icon generation; no personal data is sent.</li>
 </ul>
 
 <h2>Data categories (Apple App Privacy)</h2>
 <ul>
   <li><strong>Contact Info</strong>: email (account).</li>
+  <li><strong>Name</strong>: username and display name, linked to account identity.</li>
   <li><strong>User Content</strong>: shops, drinks, notes, photos.</li>
-  <li><strong>Identifiers</strong>: app instance identifiers (non-advertising).</li>
+  <li><strong>Identifiers</strong>: Supabase account ID, Firebase app instance ID (not used for advertising).</li>
   <li><strong>Usage Data</strong>: interactions, screens viewed, basic event counts.</li>
   <li><strong>Diagnostics</strong>: crash & performance data.</li>
 </ul>
-<p>Data is used for app functionality, analytics, and diagnostics, and is <em>not</em> used for tracking or advertising.</p>
+<p>Data is used for app functionality, analytics, and diagnostics, and is <em>not</em> used for tracking or advertising. We do not sell your personal information or share it with third parties for advertising purposes.</p>
 
 <h2>Your choices</h2>
 <p>You can disable analytics collection in-app. You may request access, export, or deletion of your data by using the in-app tools or contacting <a href="mailto:leonchsieh@gmail.com">leonchsieh@gmail.com</a>.</p>
@@ -64,8 +65,8 @@
 
 <h2>Your choices & rights</h2>
 <ul>
-  <li><strong>Access/Export</strong>: download your data using the in‑app export tool (when available) or by contacting us.</li>
-  <li><strong>Delete</strong>: use the in‑app “Delete account” control or contact us.</li>
+  <li><strong>Access/Export</strong>: download your data using the in-app export tool (when available) or by contacting us.</li>
+  <li><strong>Delete</strong>: use the in-app “Delete account” control or contact us.</li>
   <li><strong>Privacy requests</strong>: email <a href="mailto:leonchsieh@gmail.com">leonchsieh@gmail.com</a>.</li>
 </ul>
 
